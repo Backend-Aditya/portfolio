@@ -55,19 +55,19 @@ export function HeroSection() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-3xl">
-        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-3 py-1.5 text-xs sm:px-4 sm:text-sm text-muted-foreground">
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-3 py-1.5 text-xs sm:px-4 sm:text-sm text-foreground/70 font-medium">
           <MapPin className="h-3 w-3 sm:h-4 sm:w-4" />
           <span>Sardarshahar, Rajasthan, India</span>
         </div>
 
         <h1 className="text-balance text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
-          Hi, I’m{" "}
+          Hi, I'm{" "}
           <span className="bg-linear-to-r from-primary to-primary/70 bg-clip-text text-transparent">
             Aditya Pareek
           </span>
         </h1>
 
-        <p className="mt-6 text-lg sm:text-xl text-muted-foreground">
+        <p className="mt-6 text-lg sm:text-xl text-foreground/80">
           A{" "}
           <span className="font-semibold text-foreground">
             Laravel Developer
@@ -79,7 +79,7 @@ export function HeroSection() {
           .
         </p>
 
-        <p className="mx-auto mt-4 max-w-2xl text-base sm:text-lg text-muted-foreground">
+        <p className="mx-auto mt-4 max-w-2xl text-base sm:text-lg text-foreground/70">
           Building scalable web applications across music streaming, eCommerce,
           business listings, and learning management systems.
         </p>
@@ -110,10 +110,12 @@ export function HeroSection() {
       {/* Scroll indicator */}
       <button
         onClick={() => scrollToSection("about")}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-foreground/70 hover:text-foreground transition-colors animate-bounce"
         aria-label="Scroll to about section"
       >
-        <span className="text-xs uppercase tracking-widest">Scroll</span>
+        <span className="text-xs uppercase tracking-widest font-medium">
+          Scroll
+        </span>
         <ArrowDown className="h-4 w-4" />
       </button>
     </section>

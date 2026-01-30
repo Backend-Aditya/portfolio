@@ -16,7 +16,7 @@ export function HeroSection() {
 
     if (isMobile) {
       window.scrollTo({
-        top: targetY,
+        top: targetY - 64,
         behavior: "smooth",
       });
       return;

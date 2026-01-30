@@ -91,7 +91,7 @@ export function HeroSection() {
           </Button>
 
           <a
-            href="/aditya pareek.pdf"
+            href="/portfolio/aditya pareek.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

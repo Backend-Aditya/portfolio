@@ -62,33 +62,27 @@ export function ExperienceSection() {
               className="group relative rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/50 hover:shadow-lg"
             >
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                <div className="flex items-start gap-3 sm:gap-4">
-                  <div className="shrink-0 rounded-lg bg-primary/10 p-2 sm:p-3">
-                    <Briefcase className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+                <div className="flex items-start gap-4">
+                  <div className="rounded-lg bg-primary/10 p-3">
+                    <Briefcase className="h-6 w-6 text-primary" />
                   </div>
-                  <div className="flex-1 min-w-0">
-                    {" "}
-                    {/* min-w-0 allows flex child to shrink below content size */}
-                    <h3 className="font-semibold text-foreground text-sm sm:text-base">
+                  <div>
+                    <h3 className="font-semibold text-foreground">
                       <Link
                         href={experience.companyUrl}
-                        className="inline-flex flex-wrap items-center gap-1 transition-colors hover:text-primary"
+                        className="inline-flex items-center gap-1 transition-colors hover:text-primary"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <span className="wrap-break-word">{experience.title}</span>
-                        <span className="text-muted-foreground shrink-0">
-                          @
-                        </span>
-                        <span className="wrap-break-word">
-                          {experience.company}
-                        </span>
+                        {experience.title}
+                        <span className="text-muted-foreground">@</span>
+                        {experience.company}
                         {experience.companyUrl !== "#" && (
-                          <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 opacity-50 transition-opacity group-hover:opacity-100 shrink-0" />
+                          <ExternalLink className="h-4 w-4 opacity-50 transition-opacity group-hover:opacity-100" />
                         )}
                       </Link>
                     </h3>
-                    <p className="mt-1 text-xs sm:text-sm text-muted-foreground wrap-break-word">
+                    <p className="mt-1 text-sm text-muted-foreground">
                       {experience.location}
                     </p>
                   </div>

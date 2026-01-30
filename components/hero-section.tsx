@@ -98,7 +98,7 @@ export function HeroSection() {
             <Button
               variant="outline"
               size="lg"
-              className="bg-transparent inline-flex items-center gap-2"
+              className="bg-transparent inline-flex items-center gap-2 w-full"
             >
               <FileText className="h-5 w-5" />
               View Resume

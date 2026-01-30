@@ -60,7 +60,7 @@ export function Navbar() {
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm font-semibold text-foreground/75 hover:text-primary hover:bg-secondary/50 px-3 py-1.5 -mx-3 -my-1.5 rounded-md transition-all duration-200"
             >
               {item.label}
             </button>

@@ -36,7 +36,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-16 pb-24 text-center lg:px-8"
+      className="relative flex min-h-dvh flex-col items-center justify-center px-6 pt-16 pb-24 text-center lg:px-8"
     >
       {/* Background gradient */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">

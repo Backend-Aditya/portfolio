@@ -91,8 +91,9 @@ export default function Home() {
             <h3 className="font-semibold">
               Full-Stack Software Engineer — Axis Web Art Pvt. Ltd.
             </h3>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Nov 2023 — Present · Sardarshahar office · headquartered in Jaipur
+            <p className="mt-1 text-sm text-muted-foreground">Nov 2023 — Present</p>
+            <p className="text-sm text-muted-foreground">
+              Sardarshahar office · headquartered in Jaipur
             </p>
             <p className="mt-3 text-justify leading-relaxed">
               Recent work has included architecting a Shopify-to-logistics
@@ -116,8 +117,9 @@ export default function Home() {
             <h3 className="font-semibold">
               Junior Laravel Developer — TechZento Solutions
             </h3>
-            <p className="mt-1 text-sm text-muted-foreground">
-              May 2023 — Nov 2023 · Sardarshahar office · headquartered in Jaipur
+            <p className="mt-1 text-sm text-muted-foreground">May 2023 — Nov 2023</p>
+            <p className="text-sm text-muted-foreground">
+              Sardarshahar office · headquartered in Jaipur
             </p>
             <p className="mt-3 text-justify leading-relaxed">
               I developed CRUD-driven web applications, optimized complex
@@ -206,9 +208,8 @@ export default function Home() {
         <h3 className="font-semibold">
           Manipal University Jaipur — Bachelor of Computer Applications (BCA)
         </h3>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Aug 2023 — Aug 2026 · Jaipur, Rajasthan
-        </p>
+        <p className="mt-1 text-sm text-muted-foreground">Aug 2023 — Aug 2026</p>
+        <p className="text-sm text-muted-foreground">Jaipur, Rajasthan</p>
         <p className="mt-3 text-justify leading-relaxed">
           Maintaining an aggregate of 84% while working full-time as a
           software engineer. My capstone project applied system analysis

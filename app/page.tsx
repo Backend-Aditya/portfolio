@@ -68,7 +68,7 @@ export default function Home() {
       {/* Intro */}
       <section>
         <SectionHeading>Summary</SectionHeading>
-        <p className="leading-relaxed">
+        <p className="text-justify leading-relaxed">
           I'm a full-stack software engineer with three-plus years of
           experience building production web applications across
           e-commerce, SaaS, and AI-driven products. My focus is on
@@ -88,18 +88,13 @@ export default function Home() {
 
         <div className="space-y-8">
           <div>
-            <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-baseline">
-              <h3 className="font-semibold">
-                Full-Stack Software Engineer — Axis Web Art Pvt. Ltd.
-              </h3>
-              <span className="shrink-0 text-sm text-muted-foreground">
-                Nov 2023 — Present
-              </span>
-            </div>
-            <p className="text-sm text-muted-foreground">
-              Sardarshahar office · headquartered in Jaipur
+            <h3 className="font-semibold">
+              Full-Stack Software Engineer — Axis Web Art Pvt. Ltd.
+            </h3>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Nov 2023 — Present · Sardarshahar office · headquartered in Jaipur
             </p>
-            <p className="mt-3 leading-relaxed">
+            <p className="mt-3 text-justify leading-relaxed">
               Recent work has included architecting a Shopify-to-logistics
               delivery integration using Shopify's Carrier Service API,
               webhooks, and fulfillment mutations, which reduced manual
@@ -118,18 +113,13 @@ export default function Home() {
           </div>
 
           <div>
-            <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-baseline">
-              <h3 className="font-semibold">
-                Junior Laravel Developer — TechZento Solutions
-              </h3>
-              <span className="shrink-0 text-sm text-muted-foreground">
-                May 2023 — Nov 2023
-              </span>
-            </div>
-            <p className="text-sm text-muted-foreground">
-              Sardarshahar office · headquartered in Jaipur
+            <h3 className="font-semibold">
+              Junior Laravel Developer — TechZento Solutions
+            </h3>
+            <p className="mt-1 text-sm text-muted-foreground">
+              May 2023 — Nov 2023 · Sardarshahar office · headquartered in Jaipur
             </p>
-            <p className="mt-3 leading-relaxed">
+            <p className="mt-3 text-justify leading-relaxed">
               I developed CRUD-driven web applications, optimized complex
               SQL queries and Eloquent relationships to reduce page-load
               times by 28%, and implemented authentication, role-based
@@ -150,7 +140,7 @@ export default function Home() {
             <p className="text-sm text-muted-foreground">
               WebRTC · Socket.io · Express · Node.js
             </p>
-            <p className="mt-3 leading-relaxed">
+            <p className="mt-3 text-justify leading-relaxed">
               A peer-to-peer video and text chat application built with
               WebRTC and a Socket.io signaling server. It includes a
               pooled batch-matching algorithm designed to pair waiting
@@ -163,7 +153,7 @@ export default function Home() {
             <p className="text-sm text-muted-foreground">
               React Router 7 · React · TypeScript · Shopify Polaris · Prisma
             </p>
-            <p className="mt-3 leading-relaxed">
+            <p className="mt-3 text-justify leading-relaxed">
               An embedded Shopify app built with React Router 7, Polaris,
               and App Bridge that automates product variant-to-image
               grouping, replacing what was previously a manual
@@ -213,16 +203,13 @@ export default function Home() {
       <section>
         <SectionHeading>Education</SectionHeading>
 
-        <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-baseline">
-          <h3 className="font-semibold">
-            Manipal University Jaipur — Bachelor of Computer Applications (BCA)
-          </h3>
-          <span className="shrink-0 text-sm text-muted-foreground">
-            Aug 2023 — Aug 2026
-          </span>
-        </div>
-        <p className="text-sm text-muted-foreground">Jaipur, Rajasthan</p>
-        <p className="mt-3 leading-relaxed">
+        <h3 className="font-semibold">
+          Manipal University Jaipur — Bachelor of Computer Applications (BCA)
+        </h3>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Aug 2023 — Aug 2026 · Jaipur, Rajasthan
+        </p>
+        <p className="mt-3 text-justify leading-relaxed">
           Maintaining an aggregate of 84% while working full-time as a
           software engineer. My capstone project applied system analysis
           and software engineering principles to a full-stack web
@@ -235,7 +222,7 @@ export default function Home() {
       {/* Extras */}
       <section>
         <SectionHeading>Achievements &amp; Certifications</SectionHeading>
-        <p className="leading-relaxed">
+        <p className="text-justify leading-relaxed">
           I received the Innovative Programmer Award in 2024 and hold
           certifications in Full-Stack Web Development with Laravel &amp;
           PHP, as well as Advanced Laravel.

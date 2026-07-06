@@ -1,66 +1,5 @@
 import Link from "next/link";
 
-const experiences = [
-  {
-    title: "Full-Stack Software Engineer",
-    company: "Axis Web Art Pvt. Ltd.",
-    location: "Sardarshahar, Rajasthan",
-    period: "Nov 2023 — Present",
-    bullets: [
-      "Architected a Shopify-to-logistics delivery integration (Node.js/Express) using Shopify's Carrier Service API, webhooks, and fulfillment mutations to automate shipping rates and cut fulfillment effort by 38%.",
-      "Built an AI-powered bloodwork tool in Laravel with a Server-Sent Events pipeline, proxying Google Gemini's API via a Cloudflare Worker to deliver lab-report insights and cut review time by 52%.",
-      "Engineered high-performance Shopify Dawn theme features in vanilla JavaScript — scroll-triggered gallery, infinite scroll with position restoration, and a live cart progress bar via fetch interception — lifting mobile conversion by 16%.",
-      "Designed a normalized relational schema of 63 tables across 9 domains for an NDIS SaaS platform, backing billing, compliance, and participant management.",
-    ],
-  },
-  {
-    title: "Junior Laravel Developer",
-    company: "TechZento Solutions",
-    location: "Remote",
-    period: "May 2023 — Nov 2023",
-    bullets: [
-      "Developed dynamic CRUD-driven web applications in Laravel, translating client requirements into clean, maintainable features.",
-      "Optimized complex SQL queries and Eloquent relationships, reducing key page-load times by 28%.",
-      "Implemented authentication, role-based authorization, and input validation, hardening applications against common web vulnerabilities.",
-    ],
-  },
-];
-
-const projects = [
-  {
-    title: "Peekr — Random P2P Video & Text Chat",
-    stack: "WebRTC, Socket.io, Express, Node.js",
-    bullets: [
-      "Built an Omegle-style app for peer-to-peer video and text chat using WebRTC and a Socket.io signaling server.",
-      "Designed a pooled batch-matching algorithm to pair waiting users efficiently and minimize connection latency.",
-    ],
-  },
-  {
-    title: "Shopify Variant Image Automator — Embedded App",
-    stack: "React Router 7, React, TypeScript, Shopify Polaris, Prisma",
-    bullets: [
-      "Built an embedded Shopify app with React Router 7, Polaris, and App Bridge that automates product variant-to-image grouping, replacing a manual merchandising workflow.",
-      "Backed app data with Prisma session storage and integrated Shopify's Admin GraphQL API to read and update product data.",
-    ],
-  },
-];
-
-const skills = [
-  { label: "Languages", value: "TypeScript, JavaScript (ES6+), PHP, SQL, HTML5, CSS3" },
-  { label: "Frontend", value: "React, Next.js, React Router 7, jQuery, Tailwind CSS, Liquid" },
-  {
-    label: "Backend & APIs",
-    value: "Laravel, Node.js, Express.js, GraphQL, REST APIs, Prisma, Server-Sent Events, Webhooks",
-  },
-  {
-    label: "Shopify & CMS",
-    value:
-      "Embedded Apps (React Router 7, Polaris, App Bridge), Functions, Admin / Storefront / Carrier Service API, WordPress, WooCommerce",
-  },
-  { label: "AI & Cloud", value: "Anthropic Claude, Google Gemini, OpenAI APIs, Cloudflare Workers" },
-  { label: "Databases & Tools", value: "MySQL, PostgreSQL, MariaDB, MongoDB, Git/GitHub, Vite, WebRTC, Socket.io" },
-];
-
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <h2 className="mb-4 text-xs font-semibold uppercase tracking-widest">
@@ -120,128 +59,113 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Summary */}
+      {/* Intro */}
       <section className="py-8">
-        <SectionHeading>Summary</SectionHeading>
+        <SectionHeading>Hi</SectionHeading>
         <p className="leading-relaxed">
-          Full-stack software engineer with 3+ years designing and shipping
-          production web applications across e-commerce, SaaS, and AI-driven
-          products. I architect resilient backends and clean APIs (Laravel,
-          Node.js, GraphQL, REST), model data layers that scale, and build
-          fast, polished front-ends in React and TypeScript. Equally at home
-          owning a feature from database schema to pixel, wiring up
-          third-party logistics and webhooks, or integrating LLM APIs into
-          real product workflows — with a consistent focus on maintainable
-          code that ships on time and holds up in production.
+          I build the parts of the internet that quietly have to work: the
+          checkout that doesn't drop your order, the webhook that fires at
+          2am without anyone noticing, the dashboard that a compliance team
+          stares at all day. Three-plus years in, across e-commerce, SaaS,
+          and the current wave of AI-flavored everything. I like backends
+          that don't lie to you and front-ends that don't make people wait.
+          Give me a database schema and a rough idea and I'll turn it into
+          something that ships and keeps shipping.
         </p>
       </section>
 
-      {/* Experience */}
+      {/* Day job */}
       <section className="py-8">
-        <SectionHeading>Experience</SectionHeading>
-        <div className="space-y-10">
-          {experiences.map((exp) => (
-            <div key={exp.company}>
-              <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-baseline">
-                <h3 className="font-semibold">
-                  {exp.title} — {exp.company}
-                </h3>
-                <span className="shrink-0 text-sm">{exp.period}</span>
-              </div>
-              <p className="text-sm">{exp.location}</p>
-              <ul className="mt-3 space-y-2">
-                {exp.bullets.map((b, i) => (
-                  <li key={i} className="flex gap-2 leading-relaxed">
-                    <span aria-hidden>—</span>
-                    <span>{b}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Projects */}
-      <section className="py-8">
-        <SectionHeading>Projects</SectionHeading>
-        <div className="space-y-10">
-          {projects.map((project) => (
-            <div key={project.title}>
-              <h3 className="font-semibold">{project.title}</h3>
-              <p className="text-sm italic">{project.stack}</p>
-              <ul className="mt-3 space-y-2">
-                {project.bullets.map((b, i) => (
-                  <li key={i} className="flex gap-2 leading-relaxed">
-                    <span aria-hidden>—</span>
-                    <span>{b}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Technical Skills */}
-      <section className="py-8">
-        <SectionHeading>Technical Skills</SectionHeading>
-        <div className="space-y-2">
-          {skills.map((s) => (
-            <p key={s.label} className="leading-relaxed">
-              <span className="font-semibold">{s.label}:</span> {s.value}
-            </p>
-          ))}
-        </div>
-      </section>
-
-      {/* Education */}
-      <section className="py-8">
-        <SectionHeading>Education</SectionHeading>
-        <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-baseline">
-          <h3 className="font-semibold">
-            Manipal University Jaipur — Bachelor of Computer Applications (BCA)
-          </h3>
-          <span className="shrink-0 text-sm">Aug 2023 — Aug 2026</span>
-        </div>
-        <p className="text-sm">Jaipur, Rajasthan</p>
-        <ul className="mt-3 space-y-2">
-          <li className="flex gap-2 leading-relaxed">
-            <span aria-hidden>—</span>
-            <span>
-              Relevant coursework: Data Structures &amp; Algorithms, Operating
-              Systems, DBMS, Computer Networks, Cloud Computing, Software
-              Engineering, and OOP (C, C++, Java, Python).
-            </span>
-          </li>
-          <li className="flex gap-2 leading-relaxed">
-            <span aria-hidden>—</span>
-            <span>
-              Maintaining an aggregate of 84% while pursuing the degree
-              alongside full-time software engineering work.
-            </span>
-          </li>
-          <li className="flex gap-2 leading-relaxed">
-            <span aria-hidden>—</span>
-            <span>
-              Completed a capstone project applying system analysis and
-              software-engineering principles to a full-stack web
-              application.
-            </span>
-          </li>
-        </ul>
-      </section>
-
-      {/* Achievements & Certifications */}
-      <section className="py-8">
-        <SectionHeading>Achievements &amp; Certifications</SectionHeading>
+        <SectionHeading>What I get paid for</SectionHeading>
         <p className="leading-relaxed">
-          <span className="font-semibold">Award:</span> Innovative Programmer
-          Award (2024)
+          These days I'm at <span className="font-semibold">Axis Web Art</span>,
+          a small studio out of Sardarshahar that ends up building whatever
+          the client's roadmap throws at it. Recently that meant teaching a
+          Shopify store to talk directly to a logistics provider — carrier
+          rates, fulfillment webhooks, the works — which trimmed a third of
+          the manual shipping effort off someone's plate. I also built an
+          AI tool that reads bloodwork and streams back plain-English
+          insights in real time, piping Gemini through a Cloudflare Worker
+          so it doesn't choke on load. On the theme side I've been the
+          person quietly shaving milliseconds off a Shopify storefront —
+          scroll-triggered galleries, infinite scroll that remembers where
+          you were, a cart bar that updates itself — the kind of work
+          nobody notices unless you stop doing it. And underneath an NDIS
+          SaaS product there's a 63-table schema I designed from scratch,
+          which is either the most or least glamorous sentence in this
+          entire page.
         </p>
-        <p className="mt-2 leading-relaxed">
-          <span className="font-semibold">Certifications:</span> Master
-          Full-Stack Web Development with Laravel &amp; PHP; Advanced Laravel
+        <p className="mt-4 leading-relaxed">
+          Before that I cut my teeth at{" "}
+          <span className="font-semibold">TechZento Solutions</span>,
+          remote, turning client requirements into Laravel apps that didn't
+          fall over. Mostly CRUD, mostly SQL that needed optimizing more
+          than it needed reinventing, and a healthy amount of "let's make
+          sure this can't be hacked in five minutes."
+        </p>
+      </section>
+
+      {/* Side projects */}
+      <section className="py-8">
+        <SectionHeading>Things I built because I wanted to</SectionHeading>
+        <p className="leading-relaxed">
+          <span className="font-semibold">Peekr</span> is an Omegle-style
+          video chat app I built mostly out of curiosity about WebRTC. The
+          fun part wasn't the video — it was writing a batching algorithm
+          that pairs strangers off a waiting pool without making anyone sit
+          around wondering if the app is broken.
+        </p>
+        <p className="mt-4 leading-relaxed">
+          The <span className="font-semibold">Shopify Variant Image
+          Automator</span> exists because I watched someone manually match
+          product images to variants for the hundredth time and decided
+          that was a computer's job now. It's an embedded app — React
+          Router 7, Polaris, App Bridge, Prisma for session storage —
+          talking to Shopify's Admin GraphQL API to do in seconds what used
+          to eat an afternoon.
+        </p>
+      </section>
+
+      {/* Stack */}
+      <section className="py-8">
+        <SectionHeading>What's actually in the toolbox</SectionHeading>
+        <p className="leading-relaxed">
+          Day to day it's TypeScript and PHP doing most of the talking —
+          React and Next.js up front, Laravel and Node/Express underneath,
+          GraphQL and REST for anything that needs to move data around.
+          I've spent enough time inside Shopify's ecosystem (embedded apps,
+          Functions, the Admin and Storefront and Carrier Service APIs) that
+          it barely feels like a "specialty" anymore, just a language I
+          happen to speak. On the data side: MySQL and Postgres mostly,
+          MongoDB when documents make more sense than rows. And lately
+          Claude, Gemini, and OpenAI's APIs have become as normal a
+          dependency as anything else in package.json — wired through
+          Cloudflare Workers when I need them fast and close to the edge.
+        </p>
+      </section>
+
+      {/* School */}
+      <section className="py-8">
+        <SectionHeading>The degree, technically in progress</SectionHeading>
+        <p className="leading-relaxed">
+          I'm finishing a BCA at Manipal University Jaipur alongside all of
+          the above, which mostly means I already know the algorithms
+          course firsthand from debugging production code and secondhand
+          from the syllabus. Sitting around an 84% average, and the
+          capstone project did the thing capstones are supposed to do:
+          force an actual system-design process onto a full-stack app
+          instead of just wingin' it.
+        </p>
+      </section>
+
+      {/* Extras */}
+      <section className="py-8">
+        <SectionHeading>Extra credit</SectionHeading>
+        <p className="leading-relaxed">
+          Picked up an Innovative Programmer Award in 2024, and hold
+          certifications in full-stack Laravel &amp; PHP development plus
+          advanced Laravel — paper that backs up what the code already
+          says.
         </p>
       </section>
 

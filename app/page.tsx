@@ -67,111 +67,114 @@ export default function Home() {
       <div className="space-y-12">
       {/* Intro */}
       <section>
-        <SectionHeading>Hi</SectionHeading>
+        <SectionHeading>Summary</SectionHeading>
         <p className="leading-relaxed">
-          I build the parts of the internet that quietly have to work: the
-          checkout that doesn't drop your order, the webhook that fires at
-          2am without anyone noticing, the dashboard that a compliance team
-          stares at all day. Three-plus years in, across e-commerce, SaaS,
-          and the current wave of AI-flavored everything. I like backends
-          that don't lie to you and front-ends that don't make people wait.
-          Give me a database schema and a rough idea and I'll turn it into
-          something that ships and keeps shipping.
+          I'm a full-stack software engineer with three-plus years of
+          experience building production web applications across
+          e-commerce, SaaS, and AI-driven products. My focus is on
+          architecting resilient backends and clean APIs, modeling data
+          layers that scale, and building fast, polished front-ends in
+          React and TypeScript. I'm equally comfortable owning a feature
+          end to end — from database schema to interface — integrating
+          third-party logistics and webhooks, or wiring LLM APIs into real
+          product workflows, always with an emphasis on maintainable code
+          that holds up in production.
         </p>
       </section>
 
       {/* Day job */}
       <section>
-        <SectionHeading>What I get paid for</SectionHeading>
+        <SectionHeading>Experience</SectionHeading>
         <p className="leading-relaxed">
-          These days I'm at <span className="font-semibold">Axis Web Art</span>,
-          a sizeable studio out of Sardarshahar that ends up building whatever
-          the client's roadmap throws at it. Recently that meant teaching a
-          Shopify store to talk directly to a logistics provider — carrier
-          rates, fulfillment webhooks, the works — which trimmed a third of
-          the manual shipping effort off someone's plate. I also built an
-          AI tool that reads bloodwork and streams back plain-English
-          insights in real time, piping Gemini through a Cloudflare Worker
-          so it doesn't choke on load. On the theme side I've been the
-          person quietly shaving milliseconds off a Shopify storefront —
-          scroll-triggered galleries, infinite scroll that remembers where
-          you were, a cart bar that updates itself — the kind of work
-          nobody notices unless you stop doing it. And underneath an NDIS
-          SaaS product there's a 63-table schema I designed from scratch,
-          which is either the most or least glamorous sentence in this
-          entire page.
+          I currently work as a Full-Stack Software Engineer at{" "}
+          <span className="font-semibold">Axis Web Art Pvt. Ltd.</span>, a
+          well-established company based in Sardarshahar, Rajasthan. Recent
+          work has included architecting a Shopify-to-logistics delivery
+          integration using Shopify's Carrier Service API, webhooks, and
+          fulfillment mutations, which reduced manual fulfillment effort by
+          38%. I also built an AI-powered bloodwork analysis tool in
+          Laravel using a Server-Sent Events pipeline, proxying Google
+          Gemini's API through a Cloudflare Worker to deliver lab-report
+          insights and cut review time by 52%. On the storefront side, I've
+          engineered high-performance Shopify Dawn theme features —
+          including a scroll-triggered gallery, infinite scroll with
+          position restoration, and a live cart progress bar — that lifted
+          mobile conversion by 16%. I also designed a normalized relational
+          schema of 63 tables across 9 domains for an NDIS SaaS platform,
+          supporting billing, compliance, and participant management.
         </p>
         <p className="mt-4 leading-relaxed">
-          Before that I cut my teeth at{" "}
-          <span className="font-semibold">TechZento Solutions</span>,
-          remote, turning client requirements into Laravel apps that didn't
-          fall over. Mostly CRUD, mostly SQL that needed optimizing more
-          than it needed reinventing, and a healthy amount of "let's make
-          sure this can't be hacked in five minutes."
+          Before that, I worked as a Junior Laravel Developer at{" "}
+          <span className="font-semibold">TechZento Solutions</span>
+          (remote), where I developed CRUD-driven web applications,
+          optimized complex SQL queries and Eloquent relationships to
+          reduce page-load times by 28%, and implemented authentication,
+          role-based authorization, and input validation to harden
+          applications against common web vulnerabilities.
         </p>
       </section>
 
       {/* Side projects */}
       <section>
-        <SectionHeading>Things I built because I wanted to</SectionHeading>
+        <SectionHeading>Projects</SectionHeading>
         <p className="leading-relaxed">
-          <span className="font-semibold">Peekr</span> is an Omegle-style
-          video chat app I built mostly out of curiosity about WebRTC. The
-          fun part wasn't the video — it was writing a batching algorithm
-          that pairs strangers off a waiting pool without making anyone sit
-          around wondering if the app is broken.
+          <span className="font-semibold">Peekr</span> is a peer-to-peer
+          video and text chat application built with WebRTC and a
+          Socket.io signaling server. It includes a pooled batch-matching
+          algorithm designed to pair waiting users efficiently and minimize
+          connection latency.
         </p>
         <p className="mt-4 leading-relaxed">
           The <span className="font-semibold">Shopify Variant Image
-          Automator</span> exists because I watched someone manually match
-          product images to variants for the hundredth time and decided
-          that was a computer's job now. It's an embedded app — React
-          Router 7, Polaris, App Bridge, Prisma for session storage —
-          talking to Shopify's Admin GraphQL API to do in seconds what used
-          to eat an afternoon.
+          Automator</span> is an embedded Shopify app built with React
+          Router 7, Polaris, and App Bridge that automates product
+          variant-to-image grouping, replacing what was previously a
+          manual merchandising workflow. It uses Prisma for session
+          storage and integrates Shopify's Admin GraphQL API to read and
+          update product data.
         </p>
       </section>
 
       {/* Stack */}
       <section>
-        <SectionHeading>What's actually in the toolbox</SectionHeading>
+        <SectionHeading>Technical Skills</SectionHeading>
         <p className="leading-relaxed">
-          Day to day it's TypeScript and PHP doing most of the talking —
-          React and Next.js up front, Laravel and Node/Express underneath,
-          GraphQL and REST for anything that needs to move data around.
-          I've spent enough time inside Shopify's ecosystem (embedded apps,
-          Functions, the Admin and Storefront and Carrier Service APIs) that
-          it barely feels like a "specialty" anymore, just a language I
-          happen to speak. On the data side: MySQL and Postgres mostly,
-          MongoDB when documents make more sense than rows. And lately
-          Claude, Gemini, and OpenAI's APIs have become as normal a
-          dependency as anything else in package.json — wired through
-          Cloudflare Workers when I need them fast and close to the edge.
+          My day-to-day stack centers on TypeScript, JavaScript, and PHP,
+          with React and Next.js on the front end and Laravel and
+          Node.js/Express on the back end, connected via GraphQL and REST
+          APIs. I have extensive experience within the Shopify ecosystem,
+          including embedded apps, Functions, and the Admin, Storefront,
+          and Carrier Service APIs. On the data side, I work primarily with
+          MySQL and PostgreSQL, and MongoDB where a document model fits
+          better than relational tables. I've also integrated Anthropic
+          Claude, Google Gemini, and OpenAI's APIs into production
+          workflows, often via Cloudflare Workers for low-latency,
+          edge-based delivery.
         </p>
       </section>
 
       {/* School */}
       <section>
-        <SectionHeading>The degree, technically in progress</SectionHeading>
+        <SectionHeading>Education</SectionHeading>
         <p className="leading-relaxed">
-          I'm finishing a BCA at Manipal University Jaipur alongside all of
-          the above, which mostly means I already know the algorithms
-          course firsthand from debugging production code and secondhand
-          from the syllabus. Sitting around an 84% average, and the
-          capstone project did the thing capstones are supposed to do:
-          force an actual system-design process onto a full-stack app
-          instead of just wingin' it.
+          I'm currently completing a Bachelor of Computer Applications
+          (BCA) at Manipal University Jaipur, maintaining an aggregate of
+          84% while working full-time as a software engineer. My capstone
+          project applied system analysis and software engineering
+          principles to a full-stack web application, complementing
+          coursework in data structures and algorithms, operating systems,
+          DBMS, computer networks, cloud computing, and object-oriented
+          programming.
         </p>
       </section>
 
       {/* Extras */}
       <section>
-        <SectionHeading>Extra credit</SectionHeading>
+        <SectionHeading>Achievements &amp; Certifications</SectionHeading>
         <p className="leading-relaxed">
-          Picked up an Innovative Programmer Award in 2024, and hold
-          certifications in full-stack Laravel &amp; PHP development plus
-          advanced Laravel — paper that backs up what the code already
-          says.
+          I received the Innovative Programmer Award in 2024 and hold
+          certifications in Full-Stack Web Development with Laravel &amp;
+          PHP, as well as Advanced Laravel.
         </p>
       </section>
 

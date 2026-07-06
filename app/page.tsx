@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ContributionGraph } from "@/components/contribution-graph";
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
@@ -58,13 +59,8 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="mt-8 -mx-1 overflow-x-auto">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="https://ghchart.rshah.org/39d353/Backend-Aditya"
-            alt="Aditya Pareek's GitHub contribution graph"
-            className="h-auto min-w-[600px] [filter:invert(1)_hue-rotate(180deg)]"
-          />
+        <div className="mt-8">
+          <ContributionGraph username="Backend-Aditya" />
         </div>
       </header>
 

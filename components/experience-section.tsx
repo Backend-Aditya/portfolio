@@ -1,4 +1,4 @@
-import { ExternalLink, Briefcase } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 const experiences = [
@@ -46,78 +46,50 @@ export function ExperienceSection() {
       className="border-t border-border py-16 md:py-24 scroll-mt-16"
       aria-label="Work experience"
     >
-      <div className="mb-12 flex flex-col items-center text-center">
-        <span className="mb-2 text-sm font-semibold uppercase tracking-widest text-primary">
+      <div className="mb-12">
+        <span className="mb-2 block text-xs font-semibold uppercase tracking-widest text-muted-foreground">
           Experience
         </span>
-        <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+        <h2 className="text-balance font-[family-name:var(--font-playfair)] text-3xl font-bold tracking-tight sm:text-4xl">
           Where I{"'"}ve worked
         </h2>
       </div>
-      <div className="mx-auto max-w-4xl">
-        <div className="space-y-8">
-          {experiences.map((experience, index) => (
-            <div
-              key={index}
-              className="group relative rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/50 hover:shadow-lg"
-            >
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                <div className="flex items-start gap-3 sm:gap-4">
-                  <div className="shrink-0 rounded-lg bg-primary/10 p-2 sm:p-3">
-                    <Briefcase className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    {" "}
-                    {/* min-w-0 allows flex child to shrink below content size */}
-                    <h3 className="font-semibold text-foreground text-sm sm:text-base">
-                      <Link
-                        href={experience.companyUrl}
-                        className="inline-flex flex-wrap items-center gap-1 transition-colors hover:text-primary"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span className="wrap-break-word">{experience.title}</span>
-                        <span className="text-muted-foreground shrink-0">
-                          @
-                        </span>
-                        <span className="wrap-break-word">
-                          {experience.company}
-                        </span>
-                        {experience.companyUrl !== "#" && (
-                          <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 opacity-50 transition-opacity group-hover:opacity-100 shrink-0" />
-                        )}
-                      </Link>
-                    </h3>
-                    <p className="mt-1 text-xs sm:text-sm text-muted-foreground wrap-break-word">
-                      {experience.location}
-                    </p>
-                  </div>
-                </div>
-                <span className="shrink-0 rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground">
-                  {experience.period}
-                </span>
-              </div>
-              <ul className="mt-4 space-y-2 text-sm leading-relaxed text-muted-foreground">
-                {experience.description.map((item, i) => (
-                  <li key={i} className="flex gap-2">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {experience.technologies.map((tech) => (
-                  <span
-                    key={tech}
-                    className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+      <div className="mx-auto max-w-4xl divide-y divide-border">
+        {experiences.map((experience, index) => (
+          <div key={index} className="py-8 first:pt-0 last:pb-0">
+            <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-bold">
+                <Link
+                  href={experience.companyUrl}
+                  className="inline-flex flex-wrap items-center gap-1.5 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>{experience.title}</span>
+                  <span className="text-muted-foreground">&mdash;</span>
+                  <span>{experience.company}</span>
+                  {experience.companyUrl !== "#" && (
+                    <ExternalLink className="h-3.5 w-3.5 opacity-60" />
+                  )}
+                </Link>
+              </h3>
+              <span className="shrink-0 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                {experience.period} &middot; {experience.location}
+              </span>
             </div>
-          ))}
-        </div>
+            <ul className="mt-4 space-y-2 font-[family-name:var(--font-pt-serif)] text-foreground/90">
+              {experience.description.map((item, i) => (
+                <li key={i} className="flex gap-2 leading-relaxed">
+                  <span aria-hidden>&mdash;</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 text-xs uppercase tracking-widest text-muted-foreground">
+              Stack: {experience.technologies.join(", ")}
+            </p>
+          </div>
+        ))}
       </div>
     </section>
   );

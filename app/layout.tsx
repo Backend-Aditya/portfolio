@@ -1,7 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Instrument_Sans, Geist_Mono } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
+import { Instrument_Sans, Geist_Mono, Playfair_Display, PT_Serif } from "next/font/google";
 import "./globals.css";
 
 const instrumentSans = Instrument_Sans({
@@ -11,6 +10,15 @@ const instrumentSans = Instrument_Sans({
 const geistMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-geist-mono",
+});
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
+const ptSerif = PT_Serif({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-pt-serif",
 });
 
 export const metadata: Metadata = {
@@ -25,18 +33,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body
-        className={`${instrumentSans.variable} ${geistMono.variable} font-sans antialiased`}
+        className={`${instrumentSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${ptSerif.variable} font-sans antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );

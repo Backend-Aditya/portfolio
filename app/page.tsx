@@ -85,7 +85,7 @@ export default function Home() {
         <SectionHeading>What I get paid for</SectionHeading>
         <p className="leading-relaxed">
           These days I'm at <span className="font-semibold">Axis Web Art</span>,
-          a small studio out of Sardarshahar that ends up building whatever
+          a sizeable studio out of Sardarshahar that ends up building whatever
           the client's roadmap throws at it. Recently that meant teaching a
           Shopify store to talk directly to a logistics provider — carrier
           rates, fulfillment webhooks, the works — which trimmed a third of

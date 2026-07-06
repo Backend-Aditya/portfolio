@@ -13,14 +13,17 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-card">
-      <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
-        <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-          <div className="flex flex-col items-center gap-2 md:items-start">
-            <Link href="/" className="text-xl font-semibold text-foreground">
-              Aditya<span className="text-primary">.</span>
+    <footer className="border-t border-border">
+      <div className="mx-auto max-w-7xl px-6 py-8 lg:px-8">
+        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+          <div className="flex flex-col items-center gap-1 sm:items-start">
+            <Link
+              href="/"
+              className="font-[family-name:var(--font-playfair)] text-lg font-bold"
+            >
+              Aditya Pareek
             </Link>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xs uppercase tracking-widest text-muted-foreground">
               Laravel Developer crafting scalable web applications
             </p>
           </div>
@@ -31,7 +34,7 @@ export function Footer() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-lg border border-border p-2 text-muted-foreground transition-all hover:border-primary hover:text-primary"
+                className="text-muted-foreground hover:text-foreground"
                 aria-label={social.label}
               >
                 <social.icon className="h-5 w-5" />
@@ -39,10 +42,8 @@ export function Footer() {
             ))}
           </div>
         </div>
-        <div className="mt-8 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p className="mt-2">
-            © {new Date().getFullYear()} Aditya Pareek. All rights reserved.
-          </p>
+        <div className="mt-6 border-t border-border pt-6 text-center text-xs uppercase tracking-widest text-muted-foreground">
+          &copy; {new Date().getFullYear()} Aditya Pareek. All rights reserved.
         </div>
       </div>
     </footer>

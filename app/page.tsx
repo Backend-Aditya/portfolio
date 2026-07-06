@@ -88,8 +88,9 @@ export default function Home() {
         <p className="leading-relaxed">
           I currently work as a Full-Stack Software Engineer at{" "}
           <span className="font-semibold">Axis Web Art Pvt. Ltd.</span>, a
-          well-established company based in Sardarshahar, Rajasthan. Recent
-          work has included architecting a Shopify-to-logistics delivery
+          well-established company headquartered in Jaipur, working out of
+          their Sardarshahar office. Recent work has included architecting
+          a Shopify-to-logistics delivery
           integration using Shopify's Carrier Service API, webhooks, and
           fulfillment mutations, which reduced manual fulfillment effort by
           38%. I also built an AI-powered bloodwork analysis tool in
@@ -105,8 +106,10 @@ export default function Home() {
         </p>
         <p className="mt-4 leading-relaxed">
           Before that, I worked as a Junior Laravel Developer at{" "}
-          <span className="font-semibold">TechZento Solutions</span>
-          (remote), where I developed CRUD-driven web applications,
+          <span className="font-semibold">TechZento Solutions</span>,
+          another Jaipur-headquartered company, also from their
+          Sardarshahar office, where I developed CRUD-driven web
+          applications,
           optimized complex SQL queries and Eloquent relationships to
           reduce page-load times by 28%, and implemented authentication,
           role-based authorization, and input validation to harden

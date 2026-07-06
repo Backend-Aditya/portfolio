@@ -1,84 +1,48 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-@custom-variant dark (&:is(.dark *));
-
 :root {
-  /* Light mode - Laravel sand light colors */
-  --background: #fdfdfc;
-  --foreground: #21201c;
-  --card: #f9f9f8;
-  --card-foreground: #21201c;
-  --popover: #f9f9f8;
-  --popover-foreground: #21201c;
-  --primary: #f53003;
-  --primary-foreground: #fff;
-  --secondary: #f1f0ef;
-  --secondary-foreground: #63635e;
-  --muted: #e9e8e6;
-  --muted-foreground: #63635e;
-  --accent: #f53003;
-  --accent-foreground: #fff;
+  /* Newspaper palette - ink on paper */
+  --background: #f7f4ec;
+  --foreground: #1a1a1a;
+  --card: #f7f4ec;
+  --card-foreground: #1a1a1a;
+  --popover: #f7f4ec;
+  --popover-foreground: #1a1a1a;
+  --primary: #1a1a1a;
+  --primary-foreground: #f7f4ec;
+  --secondary: #efe9da;
+  --secondary-foreground: #1a1a1a;
+  --muted: #efe9da;
+  --muted-foreground: #5c584c;
+  --accent: #1a1a1a;
+  --accent-foreground: #f7f4ec;
   --destructive: oklch(57.7% .245 27.325);
   --destructive-foreground: #fff;
-  --border: #dad9d6;
-  --input: #e2e1de;
-  --ring: #f53003;
+  --border: #d8d4c8;
+  --input: #d8d4c8;
+  --ring: #1a1a1a;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.5rem;
-  --sidebar: #f9f9f8;
-  --sidebar-foreground: #21201c;
-  --sidebar-primary: #f53003;
-  --sidebar-primary-foreground: #fff;
-  --sidebar-accent: #f1f0ef;
-  --sidebar-accent-foreground: #21201c;
-  --sidebar-border: #dad9d6;
-  --sidebar-ring: #f53003;
-}
-
-.dark {
-  /* Dark mode - Laravel sand dark colors */
-  --background: #111110;
-  --foreground: #eeeeec;
-  --card: #191918;
-  --card-foreground: #eeeeec;
-  --popover: #191918;
-  --popover-foreground: #eeeeec;
-  --primary: #f53003;
-  --primary-foreground: #fff;
-  --secondary: #222221;
-  --secondary-foreground: #b5b3ad;
-  --muted: #2a2a28;
-  --muted-foreground: #7c7b74;
-  --accent: #f53003;
-  --accent-foreground: #fff;
-  --destructive: oklch(57.7% .245 27.325);
-  --destructive-foreground: #fff;
-  --border: #3b3a37;
-  --input: #31312e;
-  --ring: #f53003;
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: #191918;
-  --sidebar-foreground: #eeeeec;
-  --sidebar-primary: #f53003;
-  --sidebar-primary-foreground: #fff;
-  --sidebar-accent: #222221;
-  --sidebar-accent-foreground: #eeeeec;
-  --sidebar-border: #3b3a37;
-  --sidebar-ring: #f53003;
+  --radius: 0rem;
+  --sidebar: #f7f4ec;
+  --sidebar-foreground: #1a1a1a;
+  --sidebar-primary: #1a1a1a;
+  --sidebar-primary-foreground: #f7f4ec;
+  --sidebar-accent: #efe9da;
+  --sidebar-accent-foreground: #1a1a1a;
+  --sidebar-border: #d8d4c8;
+  --sidebar-ring: #1a1a1a;
 }
 
 @theme inline {
   --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-mono: 'Geist Mono', monospace;
+  --font-serif-display: 'Playfair Display', ui-serif, Georgia, serif;
+  --font-serif-body: 'PT Serif', ui-serif, Georgia, serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

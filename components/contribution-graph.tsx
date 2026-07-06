@@ -65,29 +65,38 @@ export async function ContributionGraph({ username }: { username: string }) {
   });
 
   return (
-    <div className="w-full">
-      <div className="flex w-full gap-[2px]">
-        {monthMarkers.map((label, i) => (
-          <span key={i} className="flex-1 text-[10px] text-muted-foreground">
-            {label}
-          </span>
-        ))}
-      </div>
-      <div className="mt-2 flex w-full gap-[2px]">
-        {weeks.map((week, wi) => (
-          <div key={wi} className="flex flex-1 flex-col gap-[2px]">
-            {week.map((day, di) => (
-              <div
-                key={di}
-                className="aspect-square w-full rounded-[1px]"
-                style={{
-                  backgroundColor: day ? LEVEL_COLORS[day.level] : "transparent",
-                }}
-                title={day ? `${day.count} contributions on ${day.date}` : undefined}
-              />
-            ))}
-          </div>
-        ))}
+    <div className="w-full overflow-x-auto">
+      <div
+        className="min-w-max"
+        style={{ width: `${weeks.length * 12}px` }}
+      >
+        <div className="flex w-full gap-[2px]">
+          {monthMarkers.map((label, i) => (
+            <span
+              key={i}
+              className="text-[10px] text-muted-foreground"
+              style={{ width: "10px" }}
+            >
+              {label}
+            </span>
+          ))}
+        </div>
+        <div className="mt-2 flex w-full gap-[2px]">
+          {weeks.map((week, wi) => (
+            <div key={wi} className="flex flex-col gap-[2px]" style={{ width: "10px" }}>
+              {week.map((day, di) => (
+                <div
+                  key={di}
+                  className="aspect-square w-full rounded-[1px]"
+                  style={{
+                    backgroundColor: day ? LEVEL_COLORS[day.level] : "transparent",
+                  }}
+                  title={day ? `${day.count} contributions on ${day.date}` : undefined}
+                />
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
       <p className="mt-2 text-xs text-muted-foreground">
         {total.toLocaleString()} contributions in the last year

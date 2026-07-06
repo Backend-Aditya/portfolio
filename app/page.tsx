@@ -17,14 +17,14 @@ export default function Home() {
         <h1 className="text-3xl font-semibold tracking-tight">Aditya Pareek</h1>
         <p className="mt-1 text-sm">Full-Stack Software Engineer</p>
 
-        <div className="mt-6 grid grid-cols-[auto_1fr] gap-x-6 gap-y-2 text-sm">
+        <div className="mt-6 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-sm sm:gap-x-6">
           <span className="text-muted-foreground">Email</span>
-          <Link href="mailto:aditya58384@gmail.com" className="underline underline-offset-4">
+          <Link href="mailto:aditya58384@gmail.com" className="min-w-0 break-words underline underline-offset-4">
             aditya58384@gmail.com
           </Link>
 
           <span className="text-muted-foreground">Phone</span>
-          <Link href="tel:+917426940033" className="underline underline-offset-4">
+          <Link href="tel:+917426940033" className="min-w-0 break-words underline underline-offset-4">
             +91 7426940033
           </Link>
 
@@ -33,7 +33,7 @@ export default function Home() {
             href="https://linkedin.com/in/adityapareek05"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline underline-offset-4"
+            className="min-w-0 break-words underline underline-offset-4"
           >
             linkedin.com/in/adityapareek05
           </Link>
@@ -43,7 +43,7 @@ export default function Home() {
             href="https://github.com/Backend-Aditya"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline underline-offset-4"
+            className="min-w-0 break-words underline underline-offset-4"
           >
             github.com/Backend-Aditya
           </Link>
@@ -53,7 +53,7 @@ export default function Home() {
             href="/aditya pareek.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline underline-offset-4"
+            className="min-w-0 break-words underline underline-offset-4"
           >
             Download PDF
           </Link>
@@ -68,7 +68,7 @@ export default function Home() {
       {/* Intro */}
       <section>
         <SectionHeading>Summary</SectionHeading>
-        <p className="text-justify leading-relaxed">
+        <p className="text-left leading-relaxed sm:text-justify">
           I'm a full-stack software engineer with three-plus years of
           experience building production web applications across
           e-commerce, SaaS, and AI-driven products. My focus is on
@@ -95,7 +95,7 @@ export default function Home() {
             <p className="text-sm text-muted-foreground">
               Sardarshahar office · headquartered in Jaipur
             </p>
-            <p className="mt-3 text-justify leading-relaxed">
+            <p className="mt-3 text-left leading-relaxed sm:text-justify">
               Recent work has included architecting a Shopify-to-logistics
               delivery integration using Shopify's Carrier Service API,
               webhooks, and fulfillment mutations, which reduced manual
@@ -121,7 +121,7 @@ export default function Home() {
             <p className="text-sm text-muted-foreground">
               Sardarshahar office · headquartered in Jaipur
             </p>
-            <p className="mt-3 text-justify leading-relaxed">
+            <p className="mt-3 text-left leading-relaxed sm:text-justify">
               I developed CRUD-driven web applications, optimized complex
               SQL queries and Eloquent relationships to reduce page-load
               times by 28%, and implemented authentication, role-based
@@ -142,7 +142,7 @@ export default function Home() {
             <p className="text-sm text-muted-foreground">
               WebRTC · Socket.io · Express · Node.js
             </p>
-            <p className="mt-3 text-justify leading-relaxed">
+            <p className="mt-3 text-left leading-relaxed sm:text-justify">
               A peer-to-peer video and text chat application built with
               WebRTC and a Socket.io signaling server. It includes a
               pooled batch-matching algorithm designed to pair waiting
@@ -155,7 +155,7 @@ export default function Home() {
             <p className="text-sm text-muted-foreground">
               React Router 7 · React · TypeScript · Shopify Polaris · Prisma
             </p>
-            <p className="mt-3 text-justify leading-relaxed">
+            <p className="mt-3 text-left leading-relaxed sm:text-justify">
               An embedded Shopify app built with React Router 7, Polaris,
               and App Bridge that automates product variant-to-image
               grouping, replacing what was previously a manual
@@ -171,30 +171,30 @@ export default function Home() {
       <section>
         <SectionHeading>Technical Skills</SectionHeading>
 
-        <div className="grid grid-cols-[auto_1fr] gap-x-6 gap-y-2">
+        <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-[auto_1fr] sm:gap-x-6 sm:gap-y-2">
           <span className="text-sm text-muted-foreground">Languages</span>
-          <span>TypeScript, JavaScript (ES6+), PHP, SQL, HTML5, CSS3</span>
+          <span className="min-w-0 break-words">TypeScript, JavaScript (ES6+), PHP, SQL, HTML5, CSS3</span>
 
           <span className="text-sm text-muted-foreground">Frontend</span>
-          <span>React, Next.js, React Router 7, jQuery, Tailwind CSS, Liquid</span>
+          <span className="min-w-0 break-words">React, Next.js, React Router 7, jQuery, Tailwind CSS, Liquid</span>
 
           <span className="text-sm text-muted-foreground">Backend &amp; APIs</span>
-          <span>
+          <span className="min-w-0 break-words">
             Laravel, Node.js, Express.js, GraphQL, REST APIs, Prisma,
             Server-Sent Events, Webhooks
           </span>
 
           <span className="text-sm text-muted-foreground">Shopify &amp; CMS</span>
-          <span>
+          <span className="min-w-0 break-words">
             Embedded Apps (React Router 7, Polaris, App Bridge), Functions,
             Admin / Storefront / Carrier Service API, WordPress, WooCommerce
           </span>
 
           <span className="text-sm text-muted-foreground">AI &amp; Cloud</span>
-          <span>Anthropic Claude, Google Gemini, OpenAI APIs, Cloudflare Workers</span>
+          <span className="min-w-0 break-words">Anthropic Claude, Google Gemini, OpenAI APIs, Cloudflare Workers</span>
 
           <span className="text-sm text-muted-foreground">Databases &amp; Tools</span>
-          <span>
+          <span className="min-w-0 break-words">
             MySQL, PostgreSQL, MariaDB, MongoDB, Git/GitHub, Vite, WebRTC,
             Socket.io
           </span>
@@ -210,7 +210,7 @@ export default function Home() {
         </h3>
         <p className="mt-1 text-sm text-muted-foreground">Aug 2023 — Aug 2026</p>
         <p className="text-sm text-muted-foreground">Jaipur, Rajasthan</p>
-        <p className="mt-3 text-justify leading-relaxed">
+        <p className="mt-3 text-left leading-relaxed sm:text-justify">
           Maintaining an aggregate of 84% while working full-time as a
           software engineer. My capstone project applied system analysis
           and software engineering principles to a full-stack web
@@ -223,7 +223,7 @@ export default function Home() {
       {/* Extras */}
       <section>
         <SectionHeading>Achievements &amp; Certifications</SectionHeading>
-        <p className="text-justify leading-relaxed">
+        <p className="text-left leading-relaxed sm:text-justify">
           I received the Innovative Programmer Award in 2024 and hold
           certifications in Full-Stack Web Development with Laravel &amp;
           PHP, as well as Advanced Laravel.

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ContributionGraph } from "@/components/contribution-graph";
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
@@ -59,9 +58,6 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="mt-6">
-          <ContributionGraph username="Backend-Aditya" />
-        </div>
       </header>
 
       <div className="space-y-12">

@@ -1,30 +1,17 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Instrument_Sans, Geist_Mono, Playfair_Display, PT_Serif } from "next/font/google";
+import { Instrument_Sans } from "next/font/google";
 import "./globals.css";
 
 const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
   variable: "--font-instrument-sans",
 });
-const geistMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-geist-mono",
-});
-const playfairDisplay = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-});
-const ptSerif = PT_Serif({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-pt-serif",
-});
 
 export const metadata: Metadata = {
-  title: "Aditya Pareek | Laravel Developer",
+  title: "Aditya Pareek | Full-Stack Software Engineer",
   description:
-    "Personal portfolio of Aditya Pareek - Laravel Developer at Axis Web Art building scalable web applications with PHP and Laravel.",
+    "Resume of Aditya Pareek - Full-Stack Software Engineer building production web applications across e-commerce, SaaS, and AI-driven products.",
 };
 
 export default function RootLayout({
@@ -34,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${instrumentSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${ptSerif.variable} font-sans antialiased`}
-      >
+      <body className={`${instrumentSans.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>

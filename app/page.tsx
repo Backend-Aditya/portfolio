@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="mb-4 text-xs font-semibold uppercase tracking-widest">
+    <h2 className="mb-4 text-base font-semibold uppercase tracking-widest">
       {children}
     </h2>
   );
@@ -61,9 +61,9 @@ export default function Home() {
         <div className="mt-8 -mx-1 overflow-x-auto">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://ghchart.rshah.org/ffffff/Backend-Aditya"
+            src="https://ghchart.rshah.org/39d353/Backend-Aditya"
             alt="Aditya Pareek's GitHub contribution graph"
-            className="h-auto min-w-[600px]"
+            className="h-auto min-w-[600px] [filter:invert(1)_hue-rotate(180deg)]"
           />
         </div>
       </header>

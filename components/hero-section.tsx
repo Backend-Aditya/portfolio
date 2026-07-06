@@ -1,8 +1,7 @@
 "use client";
 
-import { ArrowDown, MapPin, FileText } from "lucide-react";
+import { ArrowDown, FileText } from "lucide-react";
 import ScrollSmoother from "gsap/ScrollSmoother";
-import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 export function HeroSection() {
@@ -36,73 +35,51 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-dvh flex-col items-center justify-center px-6 pt-16 pb-24 text-center lg:px-8"
+      className="flex min-h-dvh flex-col items-center justify-center px-6 pt-24 pb-24 text-center lg:px-8"
     >
-      {/* Background gradient */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div
-          data-speed="0.6"
-          className="absolute -top-48 right-[-10%] h-112 w-md rounded-full bg-primary/10 blur-3xl"
-        />
-        <div
-          data-speed="0.9"
-          className="absolute top-1/3 left-[-15%] h-96 w-[24rem] rounded-full bg-primary/10 blur-3xl"
-        />
-        <div
-          data-speed="1.2"
-          className="absolute -bottom-48 right-1/4 h-80 w-[20rem] rounded-full bg-primary/10 blur-3xl"
-        />
-      </div>
+      <div className="mx-auto max-w-3xl">
+        <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+          Profile
+        </p>
 
-      <div className="relative z-10 mx-auto max-w-3xl">
-        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-3 py-1.5 text-xs sm:px-4 sm:text-sm text-foreground/70 font-medium">
-          <MapPin className="h-3 w-3 sm:h-4 sm:w-4" />
-          <span>Sardarshahar, Rajasthan, India</span>
-        </div>
-
-        <h1 className="text-balance text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
-          Hi, I'm{" "}
-          <span className="bg-linear-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-            Aditya Pareek
-          </span>
+        <h1 className="text-balance font-[family-name:var(--font-playfair)] text-4xl font-bold leading-tight tracking-tight sm:text-6xl lg:text-7xl">
+          Aditya Pareek
         </h1>
 
-        <p className="mt-6 text-lg sm:text-xl text-foreground/80">
-          A{" "}
-          <span className="font-semibold text-foreground">
-            Laravel Developer
-          </span>{" "}
-          building{" "}
-          <span className="text-foreground font-semibold">
+        <p className="mt-4 text-xs uppercase tracking-widest text-muted-foreground">
+          Sardarshahar, Rajasthan, India &middot; Laravel Developer
+        </p>
+
+        <p className="mt-8 font-[family-name:var(--font-pt-serif)] text-lg sm:text-xl">
+          A <span className="font-bold">Laravel Developer</span> building{" "}
+          <span className="font-bold">
             scalable, high-performance web applications
           </span>
           .
         </p>
 
-        <p className="mx-auto mt-4 max-w-2xl text-base sm:text-lg text-foreground/70">
+        <p className="mx-auto mt-4 max-w-2xl font-[family-name:var(--font-pt-serif)] text-base text-muted-foreground sm:text-lg">
           Building scalable web applications across music streaming, eCommerce,
           business listings, and learning management systems.
         </p>
 
-        {/* CTA buttons */}
-        <div className="mt-10 flex flex-col gap-4 sm:flex-row justify-center">
-          <Button size="lg" onClick={() => scrollToSection("contact")}>
+        {/* CTAs */}
+        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="border border-foreground px-6 py-2.5 text-xs font-semibold uppercase tracking-widest transition-colors hover:bg-foreground hover:text-background"
+          >
             Get in Touch
-          </Button>
+          </button>
 
           <a
             href="/portfolio/aditya pareek.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest underline underline-offset-4 hover:text-muted-foreground"
           >
-            <Button
-              variant="outline"
-              size="lg"
-              className="bg-transparent inline-flex items-center gap-2 w-full"
-            >
-              <FileText className="h-5 w-5" />
-              View Resume
-            </Button>
+            <FileText className="h-4 w-4" />
+            View Resume
           </a>
         </div>
       </div>
@@ -110,12 +87,10 @@ export function HeroSection() {
       {/* Scroll indicator */}
       <button
         onClick={() => scrollToSection("about")}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-foreground/70 hover:text-foreground transition-colors animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground hover:text-foreground"
         aria-label="Scroll to about section"
       >
-        <span className="text-xs uppercase tracking-widest font-medium">
-          Scroll
-        </span>
+        <span>Scroll</span>
         <ArrowDown className="h-4 w-4" />
       </button>
     </section>

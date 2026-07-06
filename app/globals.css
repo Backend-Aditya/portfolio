@@ -2,29 +2,29 @@
 @import 'tw-animate-css';
 
 :root {
-  /* Pure black on white */
-  --background: #ffffff;
-  --foreground: #000000;
-  --card: #ffffff;
-  --card-foreground: #000000;
-  --popover: #ffffff;
-  --popover-foreground: #000000;
-  --primary: #000000;
-  --primary-foreground: #ffffff;
-  --secondary: #ffffff;
-  --secondary-foreground: #000000;
-  --muted: #ffffff;
-  --muted-foreground: #555555;
-  --accent: #000000;
-  --accent-foreground: #ffffff;
-  --border: #000000;
-  --input: #000000;
-  --ring: #000000;
+  /* Pure white on black - dark mode only */
+  --background: #000000;
+  --foreground: #ffffff;
+  --card: #000000;
+  --card-foreground: #ffffff;
+  --popover: #000000;
+  --popover-foreground: #ffffff;
+  --primary: #ffffff;
+  --primary-foreground: #000000;
+  --secondary: #000000;
+  --secondary-foreground: #ffffff;
+  --muted: #000000;
+  --muted-foreground: #999999;
+  --accent: #ffffff;
+  --accent-foreground: #000000;
+  --border: #ffffff;
+  --input: #ffffff;
+  --ring: #ffffff;
   --radius: 0rem;
 }
 
 @theme inline {
-  --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-sans: 'Geist Mono', ui-monospace, 'SF Mono', 'Menlo', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

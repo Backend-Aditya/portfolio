@@ -76,15 +76,19 @@ export default function Home() {
       <header className="mb-16">
         <h1 className="text-3xl font-semibold tracking-tight">Aditya Pareek</h1>
         <p className="mt-1 text-sm">Full-Stack Software Engineer</p>
-        <p className="mt-4 text-sm">
+
+        <div className="mt-6 grid grid-cols-[auto_1fr] gap-x-6 gap-y-1.5 text-sm">
+          <span className="text-muted-foreground">Email</span>
           <Link href="mailto:aditya58384@gmail.com" className="underline underline-offset-4">
             aditya58384@gmail.com
           </Link>
-          <span className="mx-2">·</span>
+
+          <span className="text-muted-foreground">Phone</span>
           <Link href="tel:+917426940033" className="underline underline-offset-4">
             +91 7426940033
           </Link>
-          <span className="mx-2">·</span>
+
+          <span className="text-muted-foreground">LinkedIn</span>
           <Link
             href="https://linkedin.com/in/adityapareek05"
             target="_blank"
@@ -93,7 +97,8 @@ export default function Home() {
           >
             linkedin.com/in/adityapareek05
           </Link>
-          <span className="mx-2">·</span>
+
+          <span className="text-muted-foreground">GitHub</span>
           <Link
             href="https://github.com/Backend-Aditya"
             target="_blank"
@@ -102,21 +107,21 @@ export default function Home() {
           >
             github.com/Backend-Aditya
           </Link>
-        </p>
-        <p className="mt-4 text-sm">
+
+          <span className="text-muted-foreground">Resume</span>
           <Link
             href="/aditya pareek.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="underline underline-offset-4"
           >
-            Download Resume (PDF)
+            Download PDF
           </Link>
-        </p>
+        </div>
       </header>
 
       {/* Summary */}
-      <section className="border-t border-black py-10">
+      <section className="py-8">
         <SectionHeading>Summary</SectionHeading>
         <p className="leading-relaxed">
           Full-stack software engineer with 3+ years designing and shipping
@@ -132,7 +137,7 @@ export default function Home() {
       </section>
 
       {/* Experience */}
-      <section className="border-t border-black py-10">
+      <section className="py-8">
         <SectionHeading>Experience</SectionHeading>
         <div className="space-y-10">
           {experiences.map((exp) => (
@@ -158,7 +163,7 @@ export default function Home() {
       </section>
 
       {/* Projects */}
-      <section className="border-t border-black py-10">
+      <section className="py-8">
         <SectionHeading>Projects</SectionHeading>
         <div className="space-y-10">
           {projects.map((project) => (
@@ -179,7 +184,7 @@ export default function Home() {
       </section>
 
       {/* Technical Skills */}
-      <section className="border-t border-black py-10">
+      <section className="py-8">
         <SectionHeading>Technical Skills</SectionHeading>
         <div className="space-y-2">
           {skills.map((s) => (
@@ -191,7 +196,7 @@ export default function Home() {
       </section>
 
       {/* Education */}
-      <section className="border-t border-black py-10">
+      <section className="py-8">
         <SectionHeading>Education</SectionHeading>
         <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-baseline">
           <h3 className="font-semibold">
@@ -228,7 +233,7 @@ export default function Home() {
       </section>
 
       {/* Achievements & Certifications */}
-      <section className="border-t border-black py-10">
+      <section className="py-8">
         <SectionHeading>Achievements &amp; Certifications</SectionHeading>
         <p className="leading-relaxed">
           <span className="font-semibold">Award:</span> Innovative Programmer
@@ -240,7 +245,7 @@ export default function Home() {
         </p>
       </section>
 
-      <footer className="border-t border-black pt-10 text-sm">
+      <footer className="pt-8 text-sm">
         &copy; {new Date().getFullYear()} Aditya Pareek
       </footer>
     </main>

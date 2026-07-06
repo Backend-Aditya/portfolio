@@ -1,11 +1,11 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Instrument_Sans } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const instrumentSans = Instrument_Sans({
+const geistMono = Geist_Mono({
   subsets: ["latin"],
-  variable: "--font-instrument-sans",
+  variable: "--font-geist-mono",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${instrumentSans.variable} font-sans antialiased`}>
+      <body className={`${geistMono.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>

@@ -17,7 +17,7 @@ export default function Home() {
         <h1 className="text-3xl font-semibold tracking-tight">Aditya Pareek</h1>
         <p className="mt-1 text-sm">Full-Stack Software Engineer</p>
 
-        <div className="mt-6 grid grid-cols-[auto_1fr] gap-x-6 gap-y-1.5 text-sm">
+        <div className="mt-6 grid grid-cols-[auto_1fr] gap-x-6 gap-y-2 text-sm">
           <span className="text-muted-foreground">Email</span>
           <Link href="mailto:aditya58384@gmail.com" className="underline underline-offset-4">
             aditya58384@gmail.com
@@ -59,13 +59,14 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-6">
           <ContributionGraph username="Backend-Aditya" />
         </div>
       </header>
 
+      <div className="space-y-12">
       {/* Intro */}
-      <section className="py-8">
+      <section>
         <SectionHeading>Hi</SectionHeading>
         <p className="leading-relaxed">
           I build the parts of the internet that quietly have to work: the
@@ -80,7 +81,7 @@ export default function Home() {
       </section>
 
       {/* Day job */}
-      <section className="py-8">
+      <section>
         <SectionHeading>What I get paid for</SectionHeading>
         <p className="leading-relaxed">
           These days I'm at <span className="font-semibold">Axis Web Art</span>,
@@ -111,7 +112,7 @@ export default function Home() {
       </section>
 
       {/* Side projects */}
-      <section className="py-8">
+      <section>
         <SectionHeading>Things I built because I wanted to</SectionHeading>
         <p className="leading-relaxed">
           <span className="font-semibold">Peekr</span> is an Omegle-style
@@ -132,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* Stack */}
-      <section className="py-8">
+      <section>
         <SectionHeading>What's actually in the toolbox</SectionHeading>
         <p className="leading-relaxed">
           Day to day it's TypeScript and PHP doing most of the talking —
@@ -150,7 +151,7 @@ export default function Home() {
       </section>
 
       {/* School */}
-      <section className="py-8">
+      <section>
         <SectionHeading>The degree, technically in progress</SectionHeading>
         <p className="leading-relaxed">
           I'm finishing a BCA at Manipal University Jaipur alongside all of
@@ -164,7 +165,7 @@ export default function Home() {
       </section>
 
       {/* Extras */}
-      <section className="py-8">
+      <section>
         <SectionHeading>Extra credit</SectionHeading>
         <p className="leading-relaxed">
           Picked up an Innovative Programmer Award in 2024, and hold
@@ -174,9 +175,10 @@ export default function Home() {
         </p>
       </section>
 
-      <footer className="pt-8 text-sm">
+      <footer className="text-sm">
         &copy; {new Date().getFullYear()} Aditya Pareek
       </footer>
+      </div>
     </main>
   );
 }

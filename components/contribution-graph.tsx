@@ -73,7 +73,7 @@ export async function ContributionGraph({ username }: { username: string }) {
           </span>
         ))}
       </div>
-      <div className="mt-1 flex w-full gap-[2px]">
+      <div className="mt-2 flex w-full gap-[2px]">
         {weeks.map((week, wi) => (
           <div key={wi} className="flex flex-1 flex-col gap-[2px]">
             {week.map((day, di) => (
@@ -89,7 +89,7 @@ export async function ContributionGraph({ username }: { username: string }) {
           </div>
         ))}
       </div>
-      <p className="mt-3 text-xs text-muted-foreground">
+      <p className="mt-2 text-xs text-muted-foreground">
         {total.toLocaleString()} contributions in the last year
       </p>
     </div>

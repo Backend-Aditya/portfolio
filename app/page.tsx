@@ -57,6 +57,15 @@ export default function Home() {
             Download PDF
           </Link>
         </div>
+
+        <div className="mt-8 -mx-1 overflow-x-auto">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="https://ghchart.rshah.org/ffffff/Backend-Aditya"
+            alt="Aditya Pareek's GitHub contribution graph"
+            className="h-auto min-w-[600px]"
+          />
+        </div>
       </header>
 
       {/* Intro */}

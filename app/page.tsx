@@ -14,7 +14,7 @@ export default function Home() {
       {/* Header */}
       <header className="mb-16">
         <h1 className="text-3xl font-semibold tracking-tight">Aditya Pareek</h1>
-        <p className="mt-1 text-sm">Full-Stack Software Engineer</p>
+        <p className="mt-1 text-sm">Backend Software Engineer | Laravel &amp; PHP</p>
 
         <div className="mt-6 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-sm sm:gap-x-6">
           <span className="text-muted-foreground">Email</span>
@@ -49,7 +49,7 @@ export default function Home() {
 
           <span className="text-muted-foreground">Resume</span>
           <Link
-            href="/aditya pareek.pdf"
+            href="/Aditya Pareek Backend.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="min-w-0 break-words underline underline-offset-4"
@@ -65,16 +65,16 @@ export default function Home() {
       <section>
         <SectionHeading>Summary</SectionHeading>
         <p className="text-left leading-relaxed sm:text-justify">
-          I'm a full-stack software engineer with three-plus years of
-          experience building production web applications across
-          e-commerce, SaaS, and AI-driven products. My focus is on
-          architecting resilient backends and clean APIs, modeling data
-          layers that scale, and building fast, polished front-ends in
-          React and TypeScript. I'm equally comfortable owning a feature
-          end to end — from database schema to interface — integrating
-          third-party logistics and webhooks, or wiring LLM APIs into real
-          product workflows, always with an emphasis on maintainable code
-          that holds up in production.
+          Backend software engineer specializing in Laravel and PHP, driven
+          by building resilient, scalable architectures. My core strengths
+          lie in designing robust relational database schemas, engineering
+          clean RESTful APIs, and implementing performance-tuning
+          strategies like targeted caching and query optimization. I
+          approach development with a strict focus on end-to-end system
+          reliability and clean, maintainable code. I thrive when taking
+          full ownership of backend infrastructure, consistently
+          delivering secure, production-ready solutions that handle
+          real-world load seamlessly.
         </p>
       </section>
 
@@ -85,28 +85,41 @@ export default function Home() {
         <div className="space-y-8">
           <div>
             <h3 className="font-semibold">
-              Full-Stack Software Engineer — Axis Web Art Pvt. Ltd.
+              Backend Software Engineer — Axis Web Art Pvt. Ltd.
             </h3>
             <p className="mt-1 text-sm text-muted-foreground">Nov 2023 — Present</p>
-            <p className="text-sm text-muted-foreground">
-              Sardarshahar office · headquartered in Jaipur
-            </p>
-            <p className="mt-3 text-left leading-relaxed sm:text-justify">
-              Recent work has included architecting a Shopify-to-logistics
-              delivery integration using Shopify's Carrier Service API,
-              webhooks, and fulfillment mutations, which reduced manual
-              fulfillment effort by 38%. I also built an AI-powered
-              bloodwork analysis tool in Laravel using a Server-Sent Events
-              pipeline, proxying Google Gemini's API through a Cloudflare
-              Worker to deliver lab-report insights and cut review time by
-              52%. On the storefront side, I've engineered high-performance
-              Shopify Dawn theme features — including a scroll-triggered
-              gallery, infinite scroll with position restoration, and a
-              live cart progress bar — that lifted mobile conversion by
-              16%. I also designed a normalized relational schema of 63
-              tables across 9 domains for an NDIS SaaS platform, supporting
-              billing, compliance, and participant management.
-            </p>
+            <p className="text-sm text-muted-foreground">Sardarshahar, Rajasthan</p>
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-left leading-relaxed">
+              <li>
+                Architected the core backend for the company&apos;s flagship
+                e-commerce and subscription platform using Laravel.
+                Designed a normalized relational database schema and
+                developed a Sanctum-secured REST API to serve as the
+                single source of truth for web and mobile clients.
+              </li>
+              <li>
+                Engineered the critical billing and logistics pipelines by
+                integrating Stripe, Razorpay, and the Shopify Admin
+                GraphQL API. Built resilient webhook handlers with strict
+                idempotency checks to guarantee data consistency and
+                prevent duplicate charges during network timeouts.
+              </li>
+              <li>
+                Maintained high API throughput as system traffic grew by
+                decoupling heavy workloads from the HTTP request
+                lifecycle. Offloaded complex inventory syncing,
+                transactional emails, and bulk push notifications to
+                Redis-backed Laravel Queues.
+              </li>
+              <li>
+                Reclaimed engineering hours by building a comprehensive
+                internal back-office suite using Filament PHP. Delivered
+                robust data tables, role-based access controls, and
+                custom workflows, empowering the operations team to
+                manage user tiers, process refunds, and pull analytics
+                independently.
+              </li>
+            </ul>
           </div>
 
           <div>
@@ -114,16 +127,21 @@ export default function Home() {
               Junior Laravel Developer — TechZento Solutions
             </h3>
             <p className="mt-1 text-sm text-muted-foreground">May 2023 — Nov 2023</p>
-            <p className="text-sm text-muted-foreground">
-              Sardarshahar office · headquartered in Jaipur
-            </p>
-            <p className="mt-3 text-left leading-relaxed sm:text-justify">
-              I developed CRUD-driven web applications, optimized complex
-              SQL queries and Eloquent relationships to reduce page-load
-              times by 28%, and implemented authentication, role-based
-              authorization, and input validation to harden applications
-              against common web vulnerabilities.
-            </p>
+            <p className="text-sm text-muted-foreground">Remote</p>
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-left leading-relaxed">
+              <li>
+                Developed backend services and CRUD REST APIs in Laravel,
+                hardening applications against SQL injection, XSS, and
+                CSRF vulnerabilities through strict input validation and
+                role-based authorization policies.
+              </li>
+              <li>
+                Reduced key page-load times by 28% by profiling and
+                optimizing slow SQL queries, implementing eager loading to
+                eliminate N+1 issues, and adding targeted indexes to
+                high-traffic database columns.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -134,31 +152,24 @@ export default function Home() {
 
         <div className="space-y-8">
           <div>
-            <h3 className="font-semibold">Peekr</h3>
-            <p className="text-sm text-muted-foreground">
-              WebRTC · Socket.io · Express · Node.js
-            </p>
-            <p className="mt-3 text-left leading-relaxed sm:text-justify">
-              A peer-to-peer video and text chat application built with
-              WebRTC and a Socket.io signaling server. It includes a
-              pooled batch-matching algorithm designed to pair waiting
-              users efficiently and minimize connection latency.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold">Shopify Variant Image Automator</h3>
-            <p className="text-sm text-muted-foreground">
-              React Router 7 · React · TypeScript · Shopify Polaris · Prisma
-            </p>
-            <p className="mt-3 text-left leading-relaxed sm:text-justify">
-              An embedded Shopify app built with React Router 7, Polaris,
-              and App Bridge that automates product variant-to-image
-              grouping, replacing what was previously a manual
-              merchandising workflow. It uses Prisma for session storage
-              and integrates Shopify's Admin GraphQL API to read and
-              update product data.
-            </p>
+            <h3 className="font-semibold">
+              NDIS Provider Platform — Personal Side Project
+            </h3>
+            <p className="text-sm text-muted-foreground">Laravel · MySQL</p>
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-left leading-relaxed">
+              <li>
+                Designed a comprehensive backend architecture for
+                Australian NDIS disability-services providers to handle
+                participant intake, support-worker scheduling, and service
+                delivery logging.
+              </li>
+              <li>
+                Modeled complex real-world compliance rules from scratch,
+                building relational schemas and Eloquent models to
+                accurately track plan budgets, service categories, and
+                audit trails required by strict NDIS price guides.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -168,31 +179,31 @@ export default function Home() {
         <SectionHeading>Technical Skills</SectionHeading>
 
         <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-[auto_1fr] sm:gap-x-6 sm:gap-y-2">
-          <span className="text-sm text-muted-foreground">Languages</span>
-          <span className="min-w-0 break-words">TypeScript, JavaScript (ES6+), PHP, SQL, HTML5, CSS3</span>
-
-          <span className="text-sm text-muted-foreground">Frontend</span>
-          <span className="min-w-0 break-words">React, Next.js, React Router 7, jQuery, Tailwind CSS, Liquid</span>
-
-          <span className="text-sm text-muted-foreground">Backend &amp; APIs</span>
+          <span className="text-sm text-muted-foreground">Languages &amp; Frameworks</span>
           <span className="min-w-0 break-words">
-            Laravel, Node.js, Express.js, GraphQL, REST APIs, Prisma,
-            Server-Sent Events, Webhooks
+            PHP, JavaScript (ES6+), TypeScript, SQL, Laravel, Node.js,
+            Express.js
           </span>
 
-          <span className="text-sm text-muted-foreground">Shopify &amp; CMS</span>
+          <span className="text-sm text-muted-foreground">APIs &amp; Architecture</span>
           <span className="min-w-0 break-words">
-            Embedded Apps (React Router 7, Polaris, App Bridge), Functions,
-            Admin / Storefront / Carrier Service API, WordPress, WooCommerce
+            RESTful APIs, GraphQL, Webhook Integration, Shopify Admin
+            GraphQL / Carrier Service APIs
           </span>
 
-          <span className="text-sm text-muted-foreground">AI &amp; Cloud</span>
-          <span className="min-w-0 break-words">Anthropic Claude, Google Gemini, OpenAI APIs, Cloudflare Workers</span>
+          <span className="text-sm text-muted-foreground">Databases &amp; Caching</span>
+          <span className="min-w-0 break-words">MySQL, PostgreSQL, MariaDB, SQLite, Redis</span>
 
-          <span className="text-sm text-muted-foreground">Databases &amp; Tools</span>
+          <span className="text-sm text-muted-foreground">Cloud &amp; Integrations</span>
           <span className="min-w-0 break-words">
-            MySQL, PostgreSQL, MariaDB, MongoDB, Git/GitHub, Vite, WebRTC,
-            Socket.io
+            AWS S3, Cloudflare Workers, Firebase (Cloud Messaging), Payment
+            Gateways (Stripe, Razorpay, PayPal), WordPress, WooCommerce
+          </span>
+
+          <span className="text-sm text-muted-foreground">Development &amp; AI Tools</span>
+          <span className="min-w-0 break-words">
+            Git/GitHub, Composer, Prisma, Postman, VS Code, Google Gemini,
+            OpenAI, Anthropic Claude
           </span>
         </div>
       </section>
@@ -207,12 +218,10 @@ export default function Home() {
         <p className="mt-1 text-sm text-muted-foreground">Aug 2023 — Aug 2026</p>
         <p className="text-sm text-muted-foreground">Jaipur, Rajasthan</p>
         <p className="mt-3 text-left leading-relaxed sm:text-justify">
-          Maintaining an aggregate of 84% while working full-time as a
-          software engineer. My capstone project applied system analysis
-          and software engineering principles to a full-stack web
-          application, complementing coursework in data structures and
-          algorithms, operating systems, DBMS, computer networks, cloud
-          computing, and object-oriented programming.
+          Aggregate of 84%, successfully completed alongside full-time
+          software engineering work. Coursework: DBMS, Data Structures &amp;
+          Algorithms, Operating Systems, Computer Networks, Software
+          Engineering, Object-Oriented Programming.
         </p>
       </section>
 

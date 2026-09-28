@@ -9,9 +9,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aditya Pareek | Full-Stack Software Engineer",
+  title: "Aditya Pareek | Backend Software Engineer",
   description:
-    "Resume of Aditya Pareek - Full-Stack Software Engineer building production web applications across e-commerce, SaaS, and AI-driven products.",
+    "Resume of Aditya Pareek - Backend Software Engineer building production web applications across e-commerce, SaaS, and AI-driven products.",
 };
 
 export default function RootLayout({
